@@ -21,6 +21,9 @@ class Navbar extends React.Component {
                     <a href="/contact">contact</a>
                 </div>
             </div>
+            <div className="text-center bg-yellow-400 p-3">
+                THIS SITE IS UNDER CONSTRUCTION!
+            </div>
         </div>
         )
     }

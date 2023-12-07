@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Project extends React.Component {
+class ProjectCard extends React.Component {
     constructor(props) {
         super(props);
         this.text = props.text;
@@ -9,19 +9,16 @@ class Project extends React.Component {
     }
     render() {
         return (
-            <div className='flex border-1 border-white justify-start'>
-            <div className="border border-.5 border-slate-800 w-40"> 
-                <div className="border border-.5 border-slate-800"> 
-                    <p> {this.title} </p>
+            <div className="rounded-3xl bg-slate-950 w-64 h-96">
+                <img src={this.img} alt={this.title} className="object-contain w-64 h-32 rounded-3xl"/>
+                <div className="rounded-b-3xl bg-slate-800 w-64 h-64">
+                <div>
+                    <p className="p-4 text-2xl font-thin text-slate-200 font-sans">{this.title} </p>
                 </div>
-                <img src={this.img}/>
-            </div>
-            <div className="border border-.5 border-slate-800 w-180">
-                <p className="border border-.5 border-slate-800 w-180">{this.text} </p>
-            </div>
+                </div>
             </div>
         )
     }
 }
 
-export default Project
+export default ProjectCard
