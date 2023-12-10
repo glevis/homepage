@@ -5,7 +5,7 @@ export default function Root() {
   return (
     <>
       <Navbar />
-      <div id="detail">
+      <div className="bg-slate-900" id="detail">
         <Outlet />
       </div>
     </>
