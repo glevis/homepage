@@ -15,13 +15,10 @@ class Navbar extends React.Component {
                     <a href="/blog">blog</a>
                 </div>
                 <div className="font-thin text-2xl text-gray-100" >
-                    <a href="/resume">resume</a>
-                </div>
-                <div className="font-thin text-2xl text-gray-100" >
-                    <a href="/contact">contact</a>
+                    <a href="/learning">learning</a>
                 </div>
             </div>
-            <div className="text-center bg-yellow-400 p-3">
+            <div className="hidden text-center bg-yellow-400 p-3">
                 THIS SITE IS UNDER CONSTRUCTION!
             </div>
         </div>
