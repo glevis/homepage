@@ -4,9 +4,9 @@ import { Outlet } from "react-router-dom"
 export default function Root() {
   return (
     <>
-      <Navbar />
-      <div className="bg-slate-900" id="detail">
-        <Outlet />
+      <div className="w-screen max-w-screen min-h-screen flex flex-col bg-slate-900">
+        <Navbar/>
+        <Outlet/>
       </div>
     </>
   );

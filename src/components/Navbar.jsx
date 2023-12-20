@@ -1,10 +1,7 @@
-import React from 'react' 
-
-class Navbar extends React.Component {
-    render() {
+export default function Navbar() {
         return (
-        <div>
-            <div className="flex flex-row gap-8 justify-center bg-slate-950 p-3">
+        <>
+            <div className="w-screen flex flex-row gap-8 justify-center bg-slate-950 p-3 absolute">
                 <div className="font-thin text-2xl text-gray-100">
                     <a href="/home">home</a>
                 </div>
@@ -21,9 +18,7 @@ class Navbar extends React.Component {
             <div className="hidden text-center bg-yellow-400 p-3">
                 THIS SITE IS UNDER CONSTRUCTION!
             </div>
-        </div>
+        </>
         )
-    }
 }
 
-export default Navbar
