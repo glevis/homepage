@@ -6,14 +6,14 @@ class BlogEntry extends React.Component {
         this.state = {
             textHidden: true,
             text: "hidden",
-            textHeight: "10",
+            textHeight: "fit",
         }    
     }
 
     handleClick = () => {
         this.setState({textHidden: !this.state.textHidden})
         if (!this.state.textHidden) {
-            this.setState({text: "hidden", textHeight: "10"})
+            this.setState({text: "hidden", textHeight: "fit"})
             console.log("hidden");
         } else {
             this.setState({text: "", textHeight: "screen"})

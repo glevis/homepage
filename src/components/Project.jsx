@@ -12,8 +12,11 @@ class ProjectCard extends React.Component {
         return (
             <div onClick={() => {
                 window.location = `https://${this.link}`
-            }}className="flex flex-col rounded-3xl bg-slate-950 w-64 h-64 hover:scale-110 cursor-pointer">
-                <img src={this.img} alt={this.title} className="object-contain w-64 h-32 rounded-3xl"/>
+            }}className="rounded-3xl bg-slate-800 w-52 h-72 hover:scale-110 cursor-pointer">
+                <div className='bg-slate-950 w-full h-1/2 rounded-t-3xl'>
+                    <img src={this.img} alt={this.title} className="object-contain w-64 h-32 rounded-3xl text-gray-100 text-center"/>
+                </div>
+                <p className="text-gray-100 p-4">{this.text} </p>
             </div>
         )
     }

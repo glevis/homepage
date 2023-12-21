@@ -4,15 +4,15 @@ import img_test from '../assets/react.svg'
 
 export default function HomePage() {
     return (
-        <div className="flex flex-col items-center w-auto max-w-screen min-h-screen h-auto pt-32 gap-4">
-            <div className="text-center">
-                <div className="flex rounded-full overflow-hidden w-52 h-52 items-center">
-                <img className= "object-contain h-80 w-160" src={profilePic} alt="Gavin Levis"/>
+        <div className="grid grid-cols-5 gap-4 mt-4">
+                <div className="justify-self-center col-start-3">
+                    <div className="flex rounded-full overflow-hidden w-52 h-52 items-center">
+                        <img className="object-contain h-80 w-160" src={profilePic} alt="Gavin Levis"/>
+                    </div>
+                    <p className="text-center col-start-3 text-3xl text-gray-100"> Gavin Levis</p>
+                    <p className="text-center col-start-3 text-xl text-gray-100"> Software Engineer</p>
                 </div>
-                <p className="text-3xl text-gray-100"> Gavin Levis</p>
-                <p className="text-xl text-gray-100"> Software Engineer</p>
-            </div>
-        <div className="flex flex-col w-screen h-auto justify-center items-center bg-slate-900 gap-4">
+        <div className="col-start-1 flex flex-col w-screen h-auto justify-center items-center bg-slate-900 gap-4">
         <div className="p-4 outline outline-slate-600 rounded-3xl flex flex-col w-2/3 h-auto space-x-10">
             <div className="text-3xl text-gray-100">{">"}Biography</div>
             <div>
@@ -23,8 +23,9 @@ export default function HomePage() {
         </div>
         <div className="p-4 outline outline-slate-600 rounded-3xl flex flex-col w-2/3 space-x-10">
             <div className="text-3xl text-gray-100">{">"}Projects</div>
-            <div className="flex flex-row flex-wrap justify-between">
+            <div className="flex flex-row flex-wrap justify-evenly">
                 <ProjectCard link="www.glevis.dev/home" title="Homepage" img={img_test} text="Developed this website using React and Tailwind."/> 
+                <ProjectCard link="www.github.com/glevis/encodelog" title="encodelog" text="Wrote a python script tests encoding settings."/>
             </div>
         </div>
         </div>
